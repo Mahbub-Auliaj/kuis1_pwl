@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class SupplierSeeder extends Seeder
 {
@@ -16,22 +17,22 @@ class SupplierSeeder extends Seeder
     {
         $data=[
             [
-            'name' => 'Polo Bag for men',
-            'category' => 'Mens Bag',
-            'price' => 'USD 150.0'
+            'company_name' => 'Sido Muncul',
+            'item' => 'Energy Drink',
+            'city' => 'Semarang'
             ],
             [
-            'name' => 'Gucci Minibag for women',
-            'category' => 'Womens Bag',
-            'price' => 'USD 250.0'   
+            'company_name' => 'Ambifore',
+            'item' => 'Alcohol 70%',
+            'city' => 'Tangerang'   
             ],
             [
-            'name' => 'Crocodile Shoes brown theme',
-            'category' => 'Shoes',
-            'price' => 'USD 200.0'   
+            'company_name' => 'Danone',
+            'item' => 'Mineral Water',
+            'city' => 'Jogjakarta'   
             ]
         ];
 
-        DB::table('product')->insert($data);
+        DB::table('supplier')->insert($data);
     }
 }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DoctorSeeder extends Seeder
 {
@@ -16,19 +17,19 @@ class DoctorSeeder extends Seeder
     {
         $data=[
             [
-            'name' => 'Andika Yudha',
-            'specialist' => 'Lung',
-            'city' => 'Surabaya'
+            'name' => 'Alex Mahendra',
+            'specialist' => 'Dental',
+            'city' => 'Sumenep'
             ],
             [
-            'name' => 'Sutejo jiwo',
-            'specialist' => 'Heart',
-            'city' => 'Malang'   
+            'name' => 'Amin Ammar',
+            'specialist' => 'Skin',
+            'city' => 'Jember'   
             ],
             [
-            'name' => 'Ahlan Kurniawan',
+            'name' => 'Febrian Ikhza',
             'specialist' => 'Eye',
-            'city' => 'Mojokerto'   
+            'city' => 'Kediri'   
             ]
         ];
 
