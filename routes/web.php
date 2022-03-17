@@ -32,6 +32,3 @@ Route::get('/supplier', [SupplierController::class, 'supplier']);
 
 
 
-Route::get('/about', [AboutController::class, 'about']);
-Route::get('/product', [ProductController::class, 'index']);
-
