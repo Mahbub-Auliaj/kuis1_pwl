@@ -1929,3 +1929,9 @@ tbody:hover tr:hover td {
 	color: #444;
 	text-shadow: 0 1px 0 #fff;
 }
+.img-drugs{
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
