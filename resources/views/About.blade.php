@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health {{$title}</title>
+  <title>One Health {{$title}}</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 

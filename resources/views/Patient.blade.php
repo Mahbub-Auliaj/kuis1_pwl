@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health {{$title}</title>
+  <title>One Health {{$title}}</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -45,39 +45,30 @@
 
   <div class="page-section">
     <div class="table-container">
-      <h1 class="text-center wow fadeInUp">Get in Touch</h1>
+      <h1 class="text-center wow fadeInUp">Patient History</h1>
       <table>
         <thead>
           <tr>
-            <th>Option</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Complaint</th>
+            <th>City</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><strong>showSpeed</strong></td>
-            <td>15</td>
-            <td>The speed of the show/reveal</td>
-          </tr>
-          <tr>
-            <td><strong>showEasing</strong></td>
-            <td>'linear'</td>
-            <td>The easing of the show/reveal</td>
-          </tr>
-          <tr>
-            <td><strong>hideSpeed</strong></td>
-            <td>50</td>
-            <td>The speed of the hide/conceal</td>
-          </tr>
+          @foreach($patient as $p)				
+    				<tr>
+    					<td>{{ $p->id }}</td>
+              <td>{{ $p->name }}</td>
+              <td>{{ $p->complaint }}</td>
+              <td>{{ $p->city }}</td>
+    				</tr>
+          @endforeach
         </tbody>
       </table>
     </div>
   </div>
 
-  <div class="maps-container wow fadeInUp">
-    <div id="google-maps"></div>
-  </div>
 
   <div class="page-section banner-home bg-image" style="background-image: url(../assets/img/banner-pattern.svg);">
     <div class="container py-5 py-lg-0">
