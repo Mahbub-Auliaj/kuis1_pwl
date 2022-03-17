@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Supplier;
 
 class SupplierController extends Controller
 {
     public function supplier() {
-        return view('Supplier')
-            ->with('title','Suppliers');
+        $data = Supplier::all();
+        return view('Supplier',['supplier'=>$data])
+            ->with('title','Supplier');
     }
 }
